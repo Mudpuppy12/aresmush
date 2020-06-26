@@ -332,3 +332,60 @@ code {
     background: rgba(39, 39, 39, 0.8);
     padding: 3px;
 }
+
+/*--------------------Select boxes--------------*/
+input,
+textarea,
+.ember-power-select-trigger,
+.ember-basic-dropdown-trigger,
+.ember-power-select-search-input,
+.ember-text-field {
+  background: #222;
+  border: 1px solid rgba(107, 238, 239, 0.1);
+  border-radius: 0;
+  transition: border 0.3s linear;
+}
+
+.ember-power-select-option[aria-current="true"],
+.ember-power-select-option[aria-selected="true"] {
+  background-color: #323232;
+}
+
+input:focus, .ember-power-select-search-input:focus, textarea:focus {
+  box-shadow: none;
+  outline: 0;
+  border: 1px solid $primary-color;
+}
+
+.ember-power-select-trigger {
+
+  &.ember-power-select-trigger--active,
+  &:focus {
+    border: 1px solid $primary-color;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  input:focus {
+    border: 0;
+  }
+}
+
+.ember-power-select-dropdown.ember-basic-dropdown-content,
+.ember-power-select-dropdown.ember-basic-dropdown-content {
+  background-color: #222;
+  border: none;
+  border-radius: 0;
+  margin-top: -3px;
+}
+
+.ember-power-select-multiple-option {
+  background-color: #333;
+  border-radius: 2px;
+  border-color: $primary-color;
+  color: #cdcdcd;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+}
