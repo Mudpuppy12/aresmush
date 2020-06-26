@@ -177,7 +177,9 @@ li hr {
     background: rgba(39, 39, 39, 0.8);
 }
 
-  /*------- end tables --------*/
+/*------- end tables --------*/
+
+/*------- Alert boxes -------*/
 
 .alert-info {
     color: #0a0a0a;
@@ -205,11 +207,128 @@ li hr {
 }
 
 
+/*-------Table of Contents------*/
 .toc {
   background-color: rgba(39, 39, 39, 0.8);
   border-radius: 0;
   box-shadow: none;
   border: none;
-
  
+}
+
+/* ------Character pages--------- */
+
+.comp{
+  background-color: #383a4f;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.profile-box {
+    color: #d1d2d3;
+    background-color: rgba(39, 39, 39, 0.8);
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.profile-box .row {
+    border-bottom: 1px solid #383A4F;
+    margin: 3px;
+}
+
+.profile-title {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+.char-profile-gallery {
+    border-radius: 5px;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 200px;
+    width: unset;
+    margin: 10px;
+    border: 2px solid #dddddd6e;
+  }
+
+  .relationship-icon {
+      object-fit: cover;
+
+  }
+    /* ---------  Sheet ------------- */
+  .sheet_header {
+      background-color: #383A4F;
+      color: #d1d2d3;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+      padding: 5px 25px;
+      margin: 15px;
+      font-family: "Libre Baskerville";
+      font-size: 1.5em;
+      font-variant: small-caps;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      border: 0px;
+  }
+
+  div.rating-wrapper {
+      width: 55%;
+      float: right;
+      text-align: right;
+      display: inline-block;
+  }
+
+  div.rating-block {
+      width: 90%;
+  }
+
+  div.rating-numeric, div.rating-alpha {
+      width: 100%;
+  }
+
+  div.rating-numeric {
+      display: inline-block;
+  }
+
+  div.rating-alpha {
+      color: rgb(116, 139, 165);
+      display: none;
+  }
+
+  .rating-fill {
+      color: rgb(116, 139, 165);
+      opacity: 0.8;
+  }
+
+  .rating-empty {
+      color: rgb(116, 139, 165);
+      opacity: 0.6;
+  }
+
+  .alpha-numeric-switch {
+      cursor: pointer;
+      padding: 0px;
+  }
+
+  .alpha-numeric-switch:hover {
+      color: rgb(116, 139, 165);
+  }
+
+    /* --------- End Sheet ------------- */
+/* ------ End Character pages--------- */
+
+
+.status-message {
+  color: white;
+  background-color: $primary-color;
+  text-align: center; }
+
+code {
+    background: rgba(39, 39, 39, 0.8);
+    padding: 3px;
 }
