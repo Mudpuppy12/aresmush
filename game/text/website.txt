@@ -1,3 +1,4 @@
 <div class="jumbotron-tagline">Lost Innocence</div>
 
-An Online Sci-Fi Narative Space Opera Role Playing Game
+%xwAn Online Sci-Fi Narative Space Opera Role Playing Game%xn
+Current State: :construction: %xyUnder Construction%xn :construction:
