@@ -6,7 +6,7 @@ module AresMUSH
       attr_accessor :dude
 
       def parse_args
-        return nil if trim_arg(cmd.args) == nil
+        return if cmd.args is nil
         self.dude = trim_arg(cmd.args)
       end
 
