@@ -3,9 +3,10 @@ module AresMUSH
     class MrollCmd
       include CommandHandler
       
+      attr_accessor :dude
 
       def parse_args
-       self.goals = trim_arg(cmd.args)
+       self.dude = trim_arg(cmd.args)
       end
 
       def handle
