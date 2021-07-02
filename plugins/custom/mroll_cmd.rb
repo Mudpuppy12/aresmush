@@ -6,7 +6,11 @@ module AresMUSH
       attr_accessor :dude
 
       def parse_args
-       self.dude = trim_arg(cmd.args)
+        if trim_arg(cmd.args) is nil
+          client.emit_success "Wrong syntax"
+        else
+          self.dude = trim_arg(cmd.args)
+        end
       end
 
       def handle
