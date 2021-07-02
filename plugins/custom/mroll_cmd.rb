@@ -10,7 +10,7 @@ module AresMUSH
       end
 
       def handle
-        client.emit_success "MROLL"
+        client.emit_success "MROLL" + self.dude
       end
     end
   end
