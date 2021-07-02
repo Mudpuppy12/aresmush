@@ -8,6 +8,7 @@ module AresMUSH
       def parse_args
         if trim_arg(cmd.args) is nil
           client.emit_success "Wrong syntax"
+          return
         else
           self.dude = trim_arg(cmd.args)
         end
