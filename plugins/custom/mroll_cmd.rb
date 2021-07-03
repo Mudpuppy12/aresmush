@@ -22,7 +22,7 @@ module AresMUSH
       end
 
       def required_args
-        [ self.num, self.essence ]
+        [ self.first_num, self.first_essence ]
       end
       
       def handle
