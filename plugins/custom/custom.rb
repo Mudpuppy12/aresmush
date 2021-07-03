@@ -15,7 +15,6 @@ module AresMUSH
       when "mroll"
         return DiceCmd
         end
-      end
 
       nil
     end
