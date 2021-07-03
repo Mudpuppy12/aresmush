@@ -8,15 +8,11 @@ module AresMUSH
 
       def parse_args
 
-        args = cmd.parse_args(ArgParser.arg1_slash_arg2)
+        args = cmd.parse_args(ArgParser.arg1_slash_optional_arg2)
         
-        if args.arg2
-          client.emit_success "Yes"
-        end
-        
-        
-        self.first_essence = list_arg(args.arg1,"=").at(0)
-        self.first_num = list_arg(args.arg1,"=").at(1)
+          self.first_essence = list_arg(args.arg1,"=").at(0)
+          self.first_num = list_arg(args.arg1,"=").at(1)
+
 
         # help
 
