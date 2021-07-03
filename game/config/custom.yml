@@ -1,3 +1,14 @@
 ---
 custom:
   shortcuts: {}
+
+magic:
+  elements:
+  - fire
+  - earth
+  - water
+  - air
+  - darkness
+  - light
+  - life
+  - metal
