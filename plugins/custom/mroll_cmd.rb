@@ -12,7 +12,7 @@ module AresMUSH
         first_essence = args.arg1.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
         
         client.emit_success "First Essence :" + first_essence.essence
-
+        
         #if args.arg2
         #  second_essence = args.arg2.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
         #end
@@ -28,6 +28,7 @@ module AresMUSH
       
       def handle
         client.emit_success "MROLL"
+      end
     end
   end
 end
