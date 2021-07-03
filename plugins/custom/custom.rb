@@ -13,7 +13,8 @@ module AresMUSH
     def self.get_cmd_handler(client, cmd, enactor)
       case cmd.root
       when "mroll"
-        return MrollCmd
+          return MrollCmd
+      end
       end
       return nil
     end
