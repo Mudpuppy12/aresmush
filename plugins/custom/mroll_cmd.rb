@@ -15,13 +15,9 @@ module AresMUSH
           self.first_essence = list_arg(args.arg1,"=").at(0)
           self.first_num = list_arg(args.arg1,"=").at(1)
           
-
         if args.arg2
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
-
-          client.emit_success "Second Essence :" + self.second_essence
-          client.emit_success "Second num :" + self.second_num.to_s
         end
 
      
@@ -35,6 +31,9 @@ module AresMUSH
       def handle
         client.emit_success "First Essence :" + self.first_essence
         client.emit_success "First num :" + self.first_num.to_s
+
+        client.emit_success "Second Essence :" + self.second_essence
+        client.emit_success "Second num :" + self.second_num.to_s
 
       end
     end
