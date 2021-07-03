@@ -17,7 +17,7 @@ module AresMUSH
       end
       
       def handle
-        client.emit_success "MROLL=> " + self.essence + "Dice: " + self.num.to_s
+        client.emit_success "MROLL=> " + self.essence + " Dice: " + self.num.to_s
       end
     end
   end
