@@ -16,7 +16,7 @@ module AresMUSH
           self.first_num = list_arg(args.arg1,"=").at(1)
           
         if args.arg2
-          client.emit_success "WTF:" + args.arg2
+          return if not args.args2.to_s.include? "="
           
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
