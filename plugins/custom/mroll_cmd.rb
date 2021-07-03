@@ -28,9 +28,9 @@ module AresMUSH
 
       end
 
-     # def required_args
-     #   [ self.first_num, self.first_essence ]
-     # end
+     def required_args
+        [ self.first_num, self.first_essence ]
+     end
       
       def handle
         client.emit_success "MROLL"
