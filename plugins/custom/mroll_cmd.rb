@@ -13,6 +13,9 @@ module AresMUSH
           self.first_essence = list_arg(args.arg1,"=").at(0)
           self.first_num = list_arg(args.arg1,"=").at(1)
 
+          self.second_essence = list_arg(args.arg2,"=").at(0)
+          self.second_num = list_arg(args.arg2,"=").at(1)
+
 
         # help
 
