@@ -10,9 +10,9 @@ module AresMUSH
 
         args = cmd.parse_args(ArgParser.arg1_slash_arg2)
 
-        first_essence = args.arg1.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
+        #first_essence = args.arg1.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
         client.emit_success "Ok"
-        
+
         if args.arg2
           second_essence = args.arg2.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
         end
