@@ -6,7 +6,7 @@ module AresMUSH
       attr_accessor :essence, :num, :private_roll, :dude
 
       def parse_args
-        args = cmd.parse_args(/(?essence[\S]*)[=](?<num>[\d]+$)/)
+        args = cmd.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
 
         self.num = args.num.to_i
         self.essence = args.essence
