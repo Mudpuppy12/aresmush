@@ -14,7 +14,7 @@ module AresMUSH
       case cmd.root
       when "mroll"
         return MrollCmd
-        end
+      end
 
       nil
     end
