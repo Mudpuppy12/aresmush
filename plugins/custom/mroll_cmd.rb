@@ -10,8 +10,6 @@ module AresMUSH
 
         self.num = args.num.to_i
         self.essence = args.essence
-
-        self.private_roll = cmd.switch_is?("private")
       end
 
       def required_args
@@ -19,7 +17,7 @@ module AresMUSH
       end
       
       def handle
-        client.emit_success "MROLL" + essence 
+        client.emit_success "MROLL" + self.essence + "Dice:" + self.num 
       end
     end
   end
