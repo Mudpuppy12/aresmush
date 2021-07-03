@@ -10,18 +10,22 @@ module AresMUSH
 
         args = cmd.parse_args(ArgParser.arg1_slash_optional_arg2)
         
-        if args.arg1
           self.first_essence = list_arg(args.arg1,"=").at(0)
           self.first_num = list_arg(args.arg1,"=").at(1)
-        end
-        
+
+          client.emit_success "First Essence :" + self.first_essence
+          client.emit_success "First num :" + self.first_num.to_s
+
+
         if args.arg2
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
+
+          client.emit_success "Second Essence :" + self.second.essence
+          client.emit_success "Second num :" + self.second.first_num.to_s
         end
 
-        client.emit_success "First Essence :" + self.first_essence
-        client.emit_success "First num :" + self.first_num.to_s
+     
 
       end
 
