@@ -18,7 +18,7 @@ module AresMUSH
       end
       
       def handle
-        client.emit_success "MROLL" + self.dude
+        client.emit_success "MROLL" 
       end
     end
   end
