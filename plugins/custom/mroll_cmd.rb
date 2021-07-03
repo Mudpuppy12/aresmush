@@ -10,9 +10,11 @@ module AresMUSH
 
         args = cmd.parse_args(ArgParser.arg1_slash_optional_arg2)
         
-        self.first_essence = list_arg(args.arg1,"=").at(0)
-        self.first_num = list_arg(args.arg1,"=").at(1)
-
+        if args.arg1
+          self.first_essence = list_arg(args.arg1,"=").at(0)
+          self.first_num = list_arg(args.arg1,"=").at(1)
+        end
+        
         if args.arg2
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
