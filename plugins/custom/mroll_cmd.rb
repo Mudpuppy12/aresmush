@@ -16,7 +16,7 @@ module AresMUSH
 
         # help
 
-        client.emit_success "First Essence :" + self.first_essence
+        client.emit_success "First Essence :" + self.first_essence.essence
         if args.arg2 
           client.emit_success "Second Essence :" + self.second_essence
         end
