@@ -14,7 +14,6 @@ module AresMUSH
    
         if args.arg2
           second_essence = args.arg2.parse_args(/(?<essence>[\S]*)[=](?<num>[\d]+$)/)
-          client.emit_success "2nd"
         end
 
         self.first_num = args.arg1.num.to_i
