@@ -15,7 +15,6 @@ module AresMUSH
       when "mroll"
           return MrollCmd
       end
-      end
       return nil
     end
     
