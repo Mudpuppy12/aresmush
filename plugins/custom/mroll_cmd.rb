@@ -21,8 +21,8 @@ module AresMUSH
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
 
-          client.emit_success "Second Essence :" + self.second.essence
-          client.emit_success "Second num :" + self.second.first_num.to_s
+          client.emit_success "Second Essence :" + self.second_essence
+          client.emit_success "Second num :" + self.second_num.to_s
         end
 
      
