@@ -10,10 +10,7 @@ module AresMUSH
 
         args = cmd.parse_args(ArgParser.arg1_slash_optional_arg2)
 
-        if not args.arg1
-          client.emit_failure "You suck"
-          return
-        end
+        return if not args.arg1
         
           self.first_essence = list_arg(args.arg1,"=").at(0)
           self.first_num = list_arg(args.arg1,"=").at(1)
