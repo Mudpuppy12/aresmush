@@ -16,7 +16,7 @@ module AresMUSH
           self.first_num = list_arg(args.arg1,"=").at(1)
           
         if args.arg2
-          return if args.args2["="] is nil
+          return if args.args2["="] == nil
           
           self.second_essence = list_arg(args.arg2,"=").at(0)
           self.second_num = list_arg(args.arg2,"=").at(1)
