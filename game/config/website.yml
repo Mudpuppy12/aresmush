@@ -89,6 +89,9 @@ website:
     - title: Armor guide
       route: wiki-page
       id: armor_guide
+    - title: Weapon guide
+      route: wiki-page
+      id: weapon_guide
     - title: Groups List
       route: groups
     - title: Achievements
