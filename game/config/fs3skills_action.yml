@@ -11,7 +11,7 @@ fs3skills:
     desc: Coolness under pressure.
     linked_attr: Grit
   - name: Magic
-    desc: Magical aptitude and ability to use magic. Divine or arcane. 
+    desc: Magical aptitude and ability to use magic. Divine or arcane.
     linked_attr: Wits
   - name: Ranged
     desc: Ranged weapons such as bows and crossbows.
@@ -22,21 +22,12 @@ fs3skills:
   - name: Medicine
     desc: Tending to the ill and injured.
     linked_attr: Wits
-    specialties:
-    - Doctor
-    - First Aid
-    - Animals
   - name: Melee
     desc: Fighting with fists, knives, and hand-to-hand weapons.
     linked_attr: Brawn
   - name: Riding
     desc: Animal riding and horsemanship.
     linked_attr: Reflexes
-    specialties:
-    - Land
-    - Sea
-    - Air
-    - Other
   - name: Stealth
     desc: Being sneaky, slight of hand, thievery skills.
     linked_attr: Reflexes
