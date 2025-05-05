@@ -92,6 +92,9 @@ website:
     - title: Weapon guide
       route: wiki-page
       id: weapon_guide
+    - title: Magic guide
+      route: wiki-page
+      id: magic_guide
     - title: Combatant guide
       route: wiki-page
       id: combatant_types
