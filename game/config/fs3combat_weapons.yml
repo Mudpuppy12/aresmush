@@ -1,8 +1,20 @@
 ---
 fs3combat:
   weapons:
+    AOE Damage:
+      description: A magical AOE that does damage with shrapnel.
+      skill: Magic
+      lethality: 0
+      penetration: 8
+      weapon_type: Explosive
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: true
+      init_mod: 0
     AOE Stun:
-      description: An AOE stun that affects multiple targets.
+      description: A magical AOE stun that affects multiple targets.
       skill: Magic
       lethality: 0
       penetration: 8
@@ -13,17 +25,299 @@ fs3combat:
       accuracy: 5
       has_shrapnel: false
       init_mod: 0
-    AOE Damage:
-      description: Magic that does AOE damage with shrapnel.
-      skill: Magic
-      lethality: 0
-      penetration: 8
-      weapon_type: Explosive
+    Battleaxe:
+      description: A heavy axe for battle.
+      skill: Melee
+      lethality: 8
+      penetration: 6
+      weapon_type: Melee
       is_automatic: false
       recoil: 0
       damage_type: Physical
       accuracy: 0
-      has_shrapnel: true
+      has_shrapnel: false
+      init_mod: -1
+    Blowgun:
+      description: A tube for shooting light projectiles.
+      skill: Ranged
+      lethality: -10
+      penetration: 1
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 10
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Club:
+      description: A heavy blunt weapon.
+      skill: Melee
+      lethality: -10
+      penetration: 0
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Dart:
+      description: A small thrown missile.
+      skill: Ranged
+      lethality: -5
+      penetration: 2
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 10
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Flail:
+      description: A spiked ball on a chain.
+      skill: Melee
+      lethality: 6
+      penetration: 4
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: -1
+      has_shrapnel: false
+      init_mod: 0
+    Glaive:
+      description: A polearm with a blade on the end.
+      skill: Melee
+      lethality: 5
+      penetration: 5
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 1
+    Greataxe:
+      description: A massive two-handed axe.
+      skill: Melee
+      lethality: 10
+      penetration: 8
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: -1
+      has_shrapnel: false
+      init_mod: -2
+    Greatsword:
+      description: A large two-handed sword.
+      skill: Melee
+      lethality: 8
+      penetration: 7
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: -1
+    Halberd:
+      description: A polearm with axe and spear points.
+      skill: Melee
+      lethality: 7
+      penetration: 7
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 1
+    Hand Crossbow:
+      description: A small, one-handed crossbow.
+      skill: Ranged
+      lethality: 3
+      penetration: 4
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 10
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Heavy Crossbow:
+      description: A powerful, heavy crossbow.
+      skill: Ranged
+      lethality: 10
+      penetration: 8
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 10
+      recoil: 1
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: -1
+    Knife:
+      description: Knife
+      skill: Melee
+      lethality: -5
+      penetration: 4
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Lance:
+      description: A long spear for mounted combat.
+      skill: Melee
+      lethality: 10
+      penetration: 8
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 2
+    Light Crossbow:
+      description: A lighter, easier-to-use crossbow.
+      skill: Ranged
+      lethality: 5
+      penetration: 6
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 20
+      recoil: 0
+      damage_type: Physical
+      accuracy: 2
+      has_shrapnel: false
+      init_mod: 0
+    Long Bow:
+      description: A long bow for powerful ranged attacks.
+      skill: Ranged
+      lethality: 10
+      penetration: 6
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 20
+      recoil: 0
+      damage_type: Physical
+      accuracy: 2
+      has_shrapnel: false
+      init_mod: 0
+    Longsword:
+      description: A versatile sword for one or two hands.
+      skill: Melee
+      lethality: 5
+      penetration: 5
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Maul:
+      description: A heavy, two-handed hammer.
+      skill: Melee
+      lethality: 9
+      penetration: 6
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: -1
+      has_shrapnel: false
+      init_mod: -2
+    Morningstar:
+      description: A spiked club.
+      skill: Melee
+      lethality: 7
+      penetration: 5
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Net:
+      description: Used to entangle targets.
+      skill: Melee
+      lethality: -20
+      penetration: 0
+      weapon_type: Suppressive
+      is_automatic: false
+      recoil: 0
+      damage_type: Stun
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Pike:
+      description: A very long spear.
+      skill: Melee
+      lethality: 6
+      penetration: 7
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 2
+    Quarterstaff:
+      description: A long wooden staff used for striking and blocking.
+      skill: Melee
+      lethality: -5
+      penetration: 2
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 1
+    Rapier:
+      description: A slender, sharply pointed sword.
+      skill: Melee
+      lethality: 3
+      penetration: 4
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 2
+      has_shrapnel: false
+      init_mod: 1
+    Scimitar:
+      description: A curved, single-edged sword.
+      skill: Melee
+      lethality: 4
+      penetration: 4
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Scyle:
+      description: A farming tool adapted for combat.
+      skill: Melee
+      lethality: 20
+      penetration: 3
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
       init_mod: 0
     Shrapnel:
       description: Random Shrapnel
@@ -37,21 +331,45 @@ fs3combat:
       accuracy: 0
       has_shrapnel: false
       init_mod: 0
-    Bow:
-      description: Short Bow, Long Bow, type weapons.
+    Short Bow:
+      description: A short bow for ranged attacks.
       skill: Ranged
       lethality: 0
-      penetration: 6
+      penetration: 5
       weapon_type: Ranged
-      is_automatic: true
+      is_automatic: false
       ammo: 20
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Shortsword:
+      description: A short, easily handled sword.
+      skill: Melee
+      lethality: 10
+      penetration: 3
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Sickle:
+      description: A small, curved blade for slashing.
+      skill: Melee
+      lethality: -5
+      penetration: 2
+      weapon_type: Melee
+      is_automatic: false
       recoil: 0
       damage_type: Physical
       accuracy: 0
       has_shrapnel: false
       init_mod: 0
     Single Damage:
-      description: Single target magic attack.
+      description: A magical single target attack.
       skill: Magic
       lethality: 0
       penetration: 6
@@ -64,7 +382,7 @@ fs3combat:
       has_shrapnel: false
       init_mod: 0
     Single Stun:
-      description: Single Target Stun
+      description: A magical single target stun
       skill: Magic
       lethality: 70
       penetration: 10
@@ -75,30 +393,31 @@ fs3combat:
       accuracy: 0
       has_shrapnel: false
       init_mod: 0
-    Club:
-      description: Mace/club/baton
-      skill: Melee
-      lethality: -10
-      penetration: 0
-      weapon_type: Melee
-      is_automatic: false
-      recoil: 0
-      damage_type: Physical
-      accuracy: 0
-      has_shrapnel: false
-      init_mod: 0
-    Knife:
-      description: Knife
-      skill: Melee
+    Sling:
+      description: A simple ranged weapon using stones.
+      skill: Ranged
       lethality: -5
-      penetration: 4
+      penetration: 2
+      weapon_type: Ranged
+      is_automatic: false
+      ammo: 10
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
+    Trident:
+      description: A three-pronged spear.
+      skill: Melee
+      lethality: 4
+      penetration: 5
       weapon_type: Melee
       is_automatic: false
       recoil: 0
       damage_type: Physical
-      accuracy: 0
+      accuracy: 1
       has_shrapnel: false
-      init_mod: 0
+      init_mod: 1
     Unarmed:
       description: Unarmed
       skill: Melee
@@ -113,6 +432,42 @@ fs3combat:
       init_mod: 0
       allowed_specials:
       - Sparring
+    War pick:
+      description: A pickaxe-like weapon for piercing armor.
+      skill: Melee
+      lethality: 5
+      penetration: 7
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Warhammer:
+      description: A hammer designed for combat.
+      skill: Melee
+      lethality: 7
+      penetration: 6
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 0
+      has_shrapnel: false
+      init_mod: 0
+    Whip:
+      description: A flexible, lash weapon.
+      skill: Melee
+      lethality: -10
+      penetration: 1
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 2
+      has_shrapnel: false
+      init_mod: 1
   weapon specials:
     Sparring:
       description: Padded sparring equipment
