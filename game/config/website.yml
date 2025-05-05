@@ -92,6 +92,9 @@ website:
     - title: Weapon guide
       route: wiki-page
       id: weapon_guide
+    - title: Combatant guide
+      route: wiki-page
+      id: combatant_types
     - title: Groups List
       route: groups
     - title: Achievements
