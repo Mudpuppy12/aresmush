@@ -86,6 +86,9 @@ website:
       route: fs3skills-abilities
     - title: Gear List
       route: fs3combat-gear
+    - title: Armor guide
+      route: wiki-page
+      id: armor_guide
     - title: Groups List
       route: groups
     - title: Achievements
