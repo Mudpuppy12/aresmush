@@ -1,0 +1,4 @@
+---
+en:
+  renown: 
+    regular_renown_message: "Congratulations! \n\n%{name} has managed to earn more %{renown_name} than any others in the past %{days} days:\n\n A respectable amount of %{points} points!"

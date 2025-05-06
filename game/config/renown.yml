@@ -1,0 +1,38 @@
+---
+renown:
+  achievements:
+    renown_leading:
+      type: story
+      message: Was announced as leading in the specified time span in the regular
+        bbpost.
+    renown_favorite:
+      type: story
+      message: Overall leader at the end of the season.
+  cron_message_category: Announcements
+  cron_message_title: Favorite of the Week
+  cron_regular_check:
+    day_of_week:
+    - Mon
+    hour:
+    - 6
+    minute:
+    - 15
+  cron_renown_days: 7
+  org_links: false
+  org_page_postfix: {}
+  org_page_prefix: {}
+  renown_group: {}
+  renown_members: {}
+  renown_title: Renown
+  shortcuts: {}
+  standard_types:
+  - type: Freeform
+    points: 0
+  visible: true
+  web_renown_total_fields:
+  - field: group
+    value: house
+    title: House
+  - field: group
+    value: rank
+    title: Rank

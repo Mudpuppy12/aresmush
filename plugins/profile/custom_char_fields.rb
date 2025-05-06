@@ -13,7 +13,8 @@ module AresMUSH
       # @example
       #    return { goals: Website.format_markdown_for_html(char.goals) }
       def self.get_fields_for_viewing(char, viewer)
-        return {}
+        return { renown_gained: Renown.build_web_renown_data(char, viewer),
+          gained_total: Renown.prettify(Renown.calculate_gained(char.name)) }
       end
     
       # Gets custom fields for the character profile editor.
