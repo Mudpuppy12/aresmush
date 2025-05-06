@@ -40,7 +40,7 @@ chargen:
   lastwill_blurb: The fate of idled-out characters is at the game admin's discretion,
     but you can register a preference with your character's 'last will'. You may ask
     to be killed off, or turned into a NPC, or whatever.
-  max_bg_length: 50
+  max_bg_length: 500000
   permissions:
     manage_apps: Approve and reject character apps.
     view_bgs: Can view other characters' backgrounds
