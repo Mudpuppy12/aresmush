@@ -28,5 +28,21 @@ renown:
   standard_types:
   - type: Freeform
     points: 0
+  - type: Minor Scandal
+    points: -50
+  - type: Heroic Deed
+    points: 250
+  - type: Community Service
+    points: 100
+  - type: Bravery
+    points: 150
+  - type: Mentorship
+    points: 75
+  - type: Disgrace
+    points: -100
+  - type: Betrayal
+    points: -200
+  - type: Public Outburst
+    points: -75
   visible: true
   web_renown_total_fields: {}
