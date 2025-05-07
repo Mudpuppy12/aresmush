@@ -77,6 +77,8 @@ website:
       route: locations
     - title: Combats
       route: combats
+    - title: Renown - Rankings
+      route: renown-top
     - divider: true
     - title: Files
       route: files
@@ -204,6 +206,8 @@ website:
       route: roles
     - title: Server
       route: server-info
+    - title: Manage Renown
+      route: renown-management
   - title: Code
     roles:
     - coder

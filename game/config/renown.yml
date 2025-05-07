@@ -29,10 +29,4 @@ renown:
   - type: Freeform
     points: 0
   visible: true
-  web_renown_total_fields:
-  - field: group
-    value: house
-    title: House
-  - field: group
-    value: rank
-    title: Rank
+  web_renown_total_fields: {}
