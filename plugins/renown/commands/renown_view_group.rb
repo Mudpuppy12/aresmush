@@ -20,6 +20,11 @@ module AresMUSH
            return
         end
 
+        if ( Renown.group == {} )
+           client.emit_failure "No renown group defined.\n"
+           return
+        end
+
         house_chars = []
         chars = Renown.get_renown_chars.select {|c| c.groups[Renown.group] == self.org }
 
