@@ -60,6 +60,8 @@ website:
     menu:
     - title: Characters
       route: characters
+    - title: Renown Rankings
+      route: renown-top
     - title: Scenes
       route: scenes
     - title: Plots
@@ -77,8 +79,6 @@ website:
       route: locations
     - title: Combats
       route: combats
-    - title: Renown - Rankings
-      route: renown-top
     - divider: true
     - title: Files
       route: files
@@ -88,6 +88,9 @@ website:
       route: fs3skills-abilities
     - title: Gear List
       route: fs3combat-gear
+    - title: Groups List
+      route: groups
+    - divider: true
     - title: Armor guide
       route: wiki-page
       id: armor_guide
@@ -100,8 +103,10 @@ website:
     - title: Combatant guide
       route: wiki-page
       id: combatant_types
-    - title: Groups List
-      route: groups
+    - title: Renown guide
+      route: wiki-page
+      id: renown_guide
+    - divider: true
     - title: Achievements
       route: achievements
     - title: Skill Limits

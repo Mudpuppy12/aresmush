@@ -6,10 +6,7 @@ $body-font: "Open Sans", serif;
 $primary-font: "Bebas Neue", Impact, serif;
 $secondary-font: "Lexend", serif;
 
-// RENOWN
-.renown-line {
-  padding: 5px;
-  border-bottom: 1px solid #c0c0c0; }
+
 
 
 // COLOR VARIATIONS
@@ -35,6 +32,12 @@ $blackest-grey: #191919;
 $almost-black: #0c0c0c;
 
 // CORE CSS (body styling, ansi recolors, etc)
+
+
+// RENOWN
+.renown-line {
+  padding: 5px;
+  border-bottom: 1px solid $muted-green; }
 
 body {
 	font-family: $body-font;
