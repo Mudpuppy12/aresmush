@@ -1161,3 +1161,33 @@ table.char-ability-list {
 span.toastui-editor-md-table-cell {
   color: $primary-words-color !important;
 }
+
+
+.toastui-editor-defaultUI-toolbar button {
+    background-color: $dark-grey;
+    border-color: $darker-grey;
+}
+
+.toastui-editor-defaultUI-toolbar button:not(:disabled):hover {
+    background-color: $background-color;
+    border-color: $border-color;
+}
+
+.toastui-editor-toolbar-icons.heading,
+.toastui-editor-toolbar-icons.bold,
+.toastui-editor-toolbar-icons.italic,
+.toastui-editor-toolbar-icons.strike,
+.toastui-editor-toolbar-icons.hrline,
+.toastui-editor-toolbar-icons.quote,
+.toastui-editor-toolbar-icons.bullet-list,
+.toastui-editor-toolbar-icons.ordered-list,
+.toastui-editor-toolbar-icons.indent,
+.toastui-editor-toolbar-icons.task-list,
+.toastui-editor-toolbar-icons.outdent,
+.toastui-editor-toolbar-icons.table,
+.toastui-editor-toolbar-icons.image,
+.toastui-editor-toolbar-icons.link,
+.toastui-editor-toolbar-icons.code,
+.toastui-editor-toolbar-icons.codeblock {
+    background-position-y: -49px;
+}
