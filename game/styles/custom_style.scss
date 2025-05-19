@@ -1,13 +1,9 @@
-
-/* Put any custom styles here.  They will override the default styles. */
+// FONT IMPORT
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Almendra&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vibur&display=swap');
 $body-font: "Open Sans", serif;
 $primary-font: "Bebas Neue", Impact, serif;
 $secondary-font: "Lexend", serif;
-
-
-
 
 // COLOR VARIATIONS
 
@@ -31,13 +27,23 @@ $darkest-grey: #171a1c;
 $blackest-grey: #191919;
 $almost-black: #0c0c0c;
 
-// CORE CSS (body styling, ansi recolors, etc)
-
+// Wraith Touches
 
 // RENOWN
 .renown-line {
   padding: 5px;
-  border-bottom: 1px solid $muted-green; }
+  border-bottom: 1px solid $primary-outline-color; }
+
+.toastui-editor-md-code-block-line-background {
+background-color: $box-background-color; /* Replace #new-color with your desired color */
+}
+
+span.toastui-editor-md-table-cell {
+color: $primary-words-color !important;
+}
+
+
+// CORE CSS (body styling, ansi recolors, etc)
 
 body {
 	font-family: $body-font;
@@ -62,7 +68,13 @@ body {
 
 a:hover,
 a:focus {
-	color: $faded-text-color;
+	color: $primary-outline-color;
+	background-color: transparent;
+}
+
+.content-warning-label {
+    margin: 0px 5px;
+    background-color: #e69138;
 }
 
 .bg-primary {
@@ -88,22 +100,96 @@ input[type="text"]:focus {
 	box-shadow: 0 0 1px 1px $border-color inset;
 }
 
+textarea,
+input,
+.markdown-preview,
+.toastui-editor-defaultUI .ProseMirror {
+	background-color: $dark-grey;
+	border: 1px solid $almost-black;
+	border-radius: 0;
+	outline: 0;
+	min-height: 32px
+}
+
+.ProseMirror {
+	font-size: 1em;
+	padding: 10px!important;
+	height: 100%;
+}
+
+.toastui-editor-defaultUI-toolbar {
+	border-bottom: 0;
+	border-radius: 0;
+}
+
+.toastui-editor-defaultUI-toolbar button {
+	background-color: $darker-grey;
+	border-color: $darkest-grey;
+}
+
+.toastui-editor-defaultUI-toolbar button:not(:disabled):hover {
+	background-color: $background-color;
+	border-color: $border-color;
+}
+
+.toastui-editor-toolbar-icons.heading,
+.toastui-editor-toolbar-icons.bold,
+.toastui-editor-toolbar-icons.italic,
+.toastui-editor-toolbar-icons.strike,
+.toastui-editor-toolbar-icons.hrline,
+.toastui-editor-toolbar-icons.quote,
+.toastui-editor-toolbar-icons.bullet-list,
+.toastui-editor-toolbar-icons.ordered-list,
+.toastui-editor-toolbar-icons.indent,
+.toastui-editor-toolbar-icons.task-list,
+.toastui-editor-toolbar-icons.outdent,
+.toastui-editor-toolbar-icons.table,
+.toastui-editor-toolbar-icons.image,
+.toastui-editor-toolbar-icons.link,
+.toastui-editor-toolbar-icons.code,
+.toastui-editor-toolbar-icons.codeblock {
+	background-position-y: -49px;
+}
+
+.toastui-editor-defaultUI {
+	border-color: transparent;
+}
+
+.toastui-editor-mode-switch {
+	background-color: $background-color;
+	border-color: transparent;
+}
+
+.toastui-editor-popup-body,
+.toastui-editor-popup-add-table .toastui-editor-table-cell,
+.toastui-editor-popup-add-table .toastui-editor-table-cell.header,
+.toastui-editor-popup-add-table .toastui-editor-table-description,
+.toastui-editor-popup {
+	background-color: $darker-grey;
+	color: $text-color;
+	border-color: $dark-grey;
+}
+
+.toastui-editor-mode-switch .tab-item,
+.toastui-editor-mode-switch .tab-item.active {
+	background-color: $primary-color;
+	border-color: $primary-color;
+}
+
+.toastui-editor-mode-switch .tab-item {
+	color: #aaaaaa;
+}
+
+.toastui-editor-mode-switch .tab-item.active {
+	color: $text-color;
+}
+
 .ember-power-select-trigger:focus {
 	border-bottom: 0 !important;
 	border-top: 0 !important;
 	box-shadow: none !important;
 	border-left: 0 !important;
 	border-right: 0 !important;
-}
-
-textarea,
-input,
-.markdown-preview {
-	background-color: $dark-grey;
-	border: 1px solid $almost-black;
-	border-radius: 0;
-	outline: 0;
-	min-height: 32px
 }
 
 .markdown-preview {
@@ -131,7 +217,7 @@ code {
 }
 
 .markdown-control-toggle.active {
-	background-color: $dark-grey;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .markdown-control-toggle {
@@ -169,20 +255,38 @@ code {
 #title,
 #icdate,
 #tags,
-#content_warning {
+#content_warning
+#location {
 	padding: 6px 12px;
-	width: 100%
 }
 
 #content_warning {
 	margin-top: 15px
 }
 
-.ember-power-select-trigger {
+.form-item {
+	border: 0;
+	padding-left: 20px;
+}
+
+.form-item-label {
+	flex-basis: 20%;
+}
+
+.form-item-entry {
+	flex-basis: 75%;
+}
+
+.ember-power-select-trigger,
+select {
 	background-color: $dark-grey;
 	border: 1px solid $almost-black;
 	border-radius: 0;
-	min-height: 39px
+	min-height: 39px;
+}
+
+select {
+	color: $text-color;
 }
 
 .ember-power-select-option[aria-current=true] {
@@ -197,6 +301,14 @@ code {
 .ember-power-select-option[aria-selected=true] {
 	background-color: $secondary-color;
 	color: $almost-black
+}
+
+.ember-basic-dropdown-trigger,
+.ember-power-select-option,
+.ember-power-select-dropdown.ember-basic-dropdown-content {
+	background-color: $dark-grey;
+	border-color: $almost-black;
+	border-radius: 0;
 }
 
 .ember-power-select-dropdown.ember-basic-dropdown-content--above {
@@ -228,18 +340,6 @@ input[type="text"],
 	outline: 0;
 	height: 39px;
 	width: 100%;
-}
-
-.form-group:nth-of-type(6)>.col-sm-9>p {
-	width: 50%;
-	float: left;
-	min-width: 200px;
-	margin: 0
-}
-
-p:nth-of-type(2)>#location {
-	width: calc(100% - .5em);
-	margin-left: .5em
 }
 
 .markdown-controls>a:not(.markdown-control-toggle) {
@@ -322,6 +422,8 @@ span.flatpickr-weekday,
 // HEADER (top of webportal) and FOOTER
 
 .header-wrap {
+	background-image: url(/game/uploads/theme_images/background.png);
+	background-size: cover;
 	height: 300px
 }
 
@@ -330,7 +432,7 @@ span.flatpickr-weekday,
 }
 
 .site-title {
-	font-family: 'Almendra', sans-serif;
+	font-family: 'Almendra',sans-serif;
 	text-transform: uppercase;
 }
 
@@ -424,6 +526,11 @@ h6, .h6 {
 	font-size: 1.25em;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+	background-color: transparent;
+}
+
 .dropdown-menu {
 	background-color: $darker-grey;
 	border-top: 4px solid $primary-color;
@@ -446,9 +553,18 @@ h6, .h6 {
 
 // SIDEBAR
 
+.sidebar {
+	min-width: 400px;
+	width: 400px;
+}
+
 .sidebar-box,
 .sidebar-box-right {
 	border: 0;
+}
+
+.sidebar-box-right {
+	padding-right: 10px;
 }
 
 .sidebar-heading h2 {
@@ -465,6 +581,12 @@ h6, .h6 {
 
 /* Profile Box */
 
+.profile-wrap {
+	background-color: $primary-color;
+	border: 0;
+	border-radius: 0;
+}
+
 .profile-box {
 	background-color: $background-color;
 	border-radius: 4px;
@@ -472,6 +594,37 @@ h6, .h6 {
 
 .profile-image {
 	width: 375px;
+}
+
+.profile-demographics .profile-item:last-of-type {
+	border-bottom: 0;
+}
+
+.profile-demographics > .profile-item:first-child > .profile-item-name:first-of-type {
+	display: none;
+}
+
+.profile-demographics > .profile-item:first-of-type {
+	background-color: $primary-color;
+	font-family: $primary-font;
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 20px 25px;
+	margin: 0 0 11px;
+	border-bottom: none;
+}
+
+.profile-item-name {
+	padding-left: 12px 
+}
+
+.profile-item {
+	margin: 10px 10px 10px 10px
+}
+
+.profile-divider {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /* Other */
@@ -491,6 +644,7 @@ h6, .h6 {
 	font-weight: 600;
 	text-transform: uppercase;
 	border: 0;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 .nav-tabs .nav-link:first-of-type {
@@ -526,6 +680,11 @@ h6, .h6 {
 
 // GALLERIES (Character and Thumbnail)
 
+.profile-gallery,
+.thumbnail-gallery {
+	justify-content: center;
+}
+
 .profile-gallery img,
 .thumbnail-gallery-item {
 	padding: 2px;
@@ -539,14 +698,9 @@ h6, .h6 {
 	max-height: 200px;
 }
 
-/* If you would like to center your images, just remove this line and,
-
-.profile-gallery,
-.thumbnail-gallery {
-	justify-content: center;
+.profile-gallery img:hover {
+	transform: scale(2);
 }
-
-this line, too. */
 
 // PLAY SCREEN
 
@@ -596,11 +750,19 @@ this line, too. */
 	margin-left: 0.5em;
 }
 
+#chat-window .scene-pose-header {
+	background-color: transparent;
+}
+
 .hint.float-right,
 .hint.float-end {
 	padding-top: 0.25em;
 	padding-right: 0.25em;
 	text-align: right;
+}
+
+.play-main {
+	padding-left: 20px;
 }
 
 /* Scenes */
@@ -653,18 +815,6 @@ this line, too. */
 
 /* Active Scenes & Unshared Scenes */
 
-.live-scenes-heading .col-sm-6 {
-	width: 70%
-}
-
-.live-scenes-heading .col-sm-4 {
-	width: 20%;
-}
-
-.live-scenes-heading .col-sm-2 {
-	width: 10%;
-}
-
 .play-scene-title {
 	font-size: 1.5em;
 	color: $text-color;
@@ -700,24 +850,18 @@ this line, too. */
 .live-scenes-heading,
 .unshared-scenes-heading {
 	background-color: $primary-color;
-	padding: 10px 0px;
-	border-radius: 0px;
 }
 
-.live-scenes-participants,
-.unshared-scenes-contents {
-	padding: 10px 0px;
-}
-
-.live-scenes-block .col-sm-3,
-.unshared-scene-block .col-sm-2 {
-	padding: 10px 0px;
+.live-scenes-entry,
+.unshared-scenes-entry {
+	border-color: $primary-color;
 }
 
 /* Side Bar */
 
 .play-sidebar {
 	background-color: $primary-color;
+	height: fit-content;
 }
 
 .play-section-title {
@@ -738,7 +882,8 @@ this line, too. */
 }
 
 .play-selector-active {
-    background-color: $background-color;
+	background-color: $background-color;
+	color: $text-color;
 }
 
 // LOGS
@@ -776,7 +921,7 @@ this line, too. */
 }
 
 .scene-action {
-	background-color: $muted-yellow;
+	background-color: $muted-red;
 	text-transform: uppercase;
 }
 
@@ -786,7 +931,7 @@ this line, too. */
 }
 
 .content-warning-label {
-	background-color: $muted-orange;
+	background-color: $muted-yellow;
 }
 
 .badge-likes {
@@ -798,12 +943,18 @@ this line, too. */
 
 .table {
 	--bs-table-striped-bg: rgba(0, 0, 0, 0.7);
+	border: 1px solid $secondary-words-color;
 }
 
 .table > thead {
 	font-family: $secondary-font;
 	text-transform: uppercase;
 	line-height: 2;
+}
+
+td {
+	border-top: 1px solid #327b8c;
+	border-bottom: 0;
 }
 
 /* Striped Tables */
@@ -853,25 +1004,15 @@ tr {
 	color: $darkest-grey
 }
 
-.char-ability-title {
-	background-color: #1c2148;
-	font-weight: 400;
-	border: 3px solid $secondary-color;
-}
-
 .fs3-divider {
 	visibility: hidden
 }
 
 .fs3-skillbutton {
 	color: $text-color;
-}
-
-#fs3abilities .row {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center
+	background-color: $dark-grey;
+	width: 30px;
+	height: 30px;
 }
 
 .fs3-rating-display {
@@ -942,10 +1083,6 @@ tr {
 	border-bottom: 1px solid $almost-black  !important;
 }
 
-table.char-ability-list {
-	border: $almost-black solid 1px
-}
-
 .parent {
 	border: 1px;
 	margin: 1rem;
@@ -963,7 +1100,7 @@ table.char-ability-list {
 // CARD AND MODAL
 
 .scene-card .tab-content {
-	max-height: 36vh;
+	max-height: 27vh;
 	overflow-y: scroll;
 }
 
@@ -971,8 +1108,12 @@ table.char-ability-list {
 	font-size: 0.9em;
 }
 
-.scene-card > .row > .col-3 {
-	width: 150px;
+.scene-card-profile {
+	flex-basis: 30%;
+}
+
+.scene-card-demographics {
+	flex-basis: 70%;
 }
 
 .scene-card .log-icon-container {
@@ -988,16 +1129,31 @@ table.char-ability-list {
 	color: $primary-color;
 }
 
-.card-ability-title {
-	font-family: $secondary-font;
-	font-size: 1.25em;
-	border-bottom: 1px solid $primary-color;
-	margin-bottom: 5px;
-	font-weight: 400;
-}
-
 .scene-card-demo {
 	font-size: 0.95em;
+}
+
+.scene-card-top {
+	padding-bottom: 20px;
+}
+
+.scene-card > hr {
+	display: none;
+}
+
+.scene-card-demo > .profile-item-list {
+	padding: 0;
+	border: 1px solid $almost-black;
+}
+
+.scene-card-demo > .profile-demographics > .profile-item:first-of-type {
+	padding: 15px 20px;
+}
+
+.scene-card-demo > .profile-demographics > .profile-item {
+	margin: 1px;
+	padding-bottom: 3px;
+	padding-top: 3px;
 }
 
 .scene-card-profile .char-icon-container {
@@ -1010,18 +1166,33 @@ table.char-ability-list {
 
 .char-ability-title {
 	background-color: $primary-color;
+	font-size: 1.25em;
 	color: $text-color;
 	font-family: $secondary-font;
 	font-weight: 400;
-	border: $almost-black solid 1px;
-	border-bottom: 0;
-	padding: 20px
+	padding: 20px;
+	margin: 0px;
+	border: 0;
+}
+
+.fs3-ability-table {
+	border: 1px solid $secondary-words-color;
+	margin-top: 10px;
+}
+
+.alts-switcher > tr > td:nth-of-type(2) {
+	text-align: center;
+}
+
+.alts-switcher > tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 // SCROLLBARS
 
 .play-sidebar::-webkit-scrollbar,
 .scene-card .tab-content::-webkit-scrollbar,
+.mapbox .tab-content::-webkit-scrollbar,
 .modal-body::-webkit-scrollbar {
 	width: 10px;
 	background-color: transparent
@@ -1029,6 +1200,7 @@ table.char-ability-list {
 
 .play-sidebar::-webkit-scrollbar-thumb,
 .scene-card .tab-content::-webkit-scrollbar-thumb,
+.mapbox .tab-content::-webkit-scrollbar-thumb,
 .modal-body::-webkit-scrollbar-thumb {
 	background-clip: content-box;
 	border: 3px solid transparent;
@@ -1039,6 +1211,7 @@ table.char-ability-list {
 
 .play-sidebar::-webkit-scrollbar-button,
 .scene-card .tab-content::-webkit-scrollbar-button,
+.mapbox .tab-content::-webkit-scrollbar-button,
 .modal-body::-webkit-scrollbar-button {
 	width: 0;
 	height: 0;
@@ -1047,6 +1220,7 @@ table.char-ability-list {
 
 .play-sidebar::-webkit-scrollbar-corner,
 .scene-card .tab-content::-webkit-scrollbar-corner,
+.mapbox .tab-content::-webkit-scrollbar-corner,
 .modal-body::-webkit-scrollbar-corner {
 	background-color: transparent
 }
@@ -1058,6 +1232,10 @@ table.char-ability-list {
 }
 
 // JOBS AND REQUESTS
+
+.display-job-row {
+	padding-left: 20px;
+}
 
 .job-category-APP {
 	background-color: $muted-red;
@@ -1152,42 +1330,4 @@ table.char-ability-list {
 	background-color: $secondary-color;
 	border-color: $secondary-color;
 	box-shadow: none;
-}
-
-.toastui-editor-md-code-block-line-background {
-  background-color: $box-background-color; /* Replace #new-color with your desired color */
-}
-
-span.toastui-editor-md-table-cell {
-  color: $primary-words-color !important;
-}
-
-
-.toastui-editor-defaultUI-toolbar button {
-    background-color: $dark-grey;
-    border-color: $darker-grey;
-}
-
-.toastui-editor-defaultUI-toolbar button:not(:disabled):hover {
-    background-color: $background-color;
-    border-color: $border-color;
-}
-
-.toastui-editor-toolbar-icons.heading,
-.toastui-editor-toolbar-icons.bold,
-.toastui-editor-toolbar-icons.italic,
-.toastui-editor-toolbar-icons.strike,
-.toastui-editor-toolbar-icons.hrline,
-.toastui-editor-toolbar-icons.quote,
-.toastui-editor-toolbar-icons.bullet-list,
-.toastui-editor-toolbar-icons.ordered-list,
-.toastui-editor-toolbar-icons.indent,
-.toastui-editor-toolbar-icons.task-list,
-.toastui-editor-toolbar-icons.outdent,
-.toastui-editor-toolbar-icons.table,
-.toastui-editor-toolbar-icons.image,
-.toastui-editor-toolbar-icons.link,
-.toastui-editor-toolbar-icons.code,
-.toastui-editor-toolbar-icons.codeblock {
-    background-position-y: -49px;
 }
