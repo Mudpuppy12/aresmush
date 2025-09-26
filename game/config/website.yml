@@ -9,6 +9,11 @@ website:
       message: Edited a wiki page.
   allow_html_in_markdown: true
   auto_wiki_export: true
+  char_backup_cleanup_cron:
+    hour:
+    - 3
+    minute:
+    - 14
   character_gallery_group: Species
   character_gallery_subgroup: Species
   hide_searchbox: true
@@ -138,6 +143,9 @@ website:
     - title: Policies
       route: wiki-page
       id: policies
+    - title: Other links
+      route: wiki-page
+      id: other_websites_and_links
     - divider: true
     - title: Berem
       route: wiki-page
