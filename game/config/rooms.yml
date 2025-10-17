@@ -28,3 +28,4 @@ rooms:
     location: room
     rooms: room
     locations: room
+  icon_legend: {}
