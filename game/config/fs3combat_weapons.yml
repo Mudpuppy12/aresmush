@@ -1,5 +1,9 @@
 ---
 fs3combat:
+  weapon specials:
+    Sparring:
+      description: Padded sparring equipment
+      lethality: -50
   weapons:
     AOE Damage:
       description: A magical AOE that does damage with shrapnel.
@@ -356,6 +360,18 @@ fs3combat:
       accuracy: 1
       has_shrapnel: false
       init_mod: 0
+    Thornblade:
+      description: A short, sharp and unbreakable wooden sword
+      skill: Melee
+      lethality: 20
+      penetration: 4
+      weapon_type: Melee
+      is_automatic: false
+      recoil: 0
+      damage_type: Physical
+      accuracy: 1
+      has_shrapnel: false
+      init_mod: 0
     Sickle:
       description: A small, curved blade for slashing.
       skill: Melee
@@ -468,7 +484,3 @@ fs3combat:
       accuracy: 2
       has_shrapnel: false
       init_mod: 1
-  weapon specials:
-    Sparring:
-      description: Padded sparring equipment
-      lethality: -50
