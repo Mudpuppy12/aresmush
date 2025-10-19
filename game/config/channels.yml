@@ -3,6 +3,7 @@ channels:
   announce_channel: Game
   approved_channels:
   - RP Requests
+  - Scene
   clear_history_cron:
     hour:
     - 4
