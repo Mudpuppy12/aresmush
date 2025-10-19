@@ -24,36 +24,36 @@ fs3skills:
         Alphatian: 1
         Thyatian: 1
     Species:
-       Dwarf:
-          skills: 
-              Dwarfish : 3
-       Elf: 
-          skills: 
-             Elven : 3
-       Gnome:
-          skills: 
-             Gnomish: 3
-       Hin: 
-          skills: 
-             Hin : 3
-       Human:  
-          skills: 
-             Alphatian : 2
-             Thyatian : 3
-       Lupin:
-           skills: 
-               Lupin : 3
-       Phanaton:
-           skills: 
-              Phanaton : 3
-       Rakasta:
-           skills: 
-              Rakasta : 3
-       Sidhe:
-          skills: 
-             Fey : 3
-       Tortle:
-           skills: 
-               Tortle : 3
+      Dwarf:
+        skills:
+          Dwarfish: 3
+      Elf:
+        skills:
+          Elven: 3
+      Gnome:
+        skills:
+          Gnomish: 3
+      Hin:
+        skills:
+          Hin: 3
+      Human:
+        skills:
+          Alphatian: 2
+          Thyatian: 3
+      Lupin:
+        skills:
+          Lupin: 3
+      Phanaton:
+        skills:
+          Stealth: 3
+      Rakasta:
+        skills:
+          Rakasta: 3
+      Sidhe:
+        skills:
+          Fey: 3
+      Tortle:
+        skills:
+          Tortle: 3
   unusual_skills:
-    - Magic
+  - Magic
