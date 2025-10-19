@@ -87,3 +87,7 @@ fs3skills:
     desc: Native language of the Rakasta species.
   - name: Tortle
     desc: Language of the Tortle species.
+  - name: Goblin
+    desc: The language shared by goblins, hobgoblins and bugbears.
+  - name: Orcish
+    desc: The language of Orc and Gnolls used in the brokenlands.
