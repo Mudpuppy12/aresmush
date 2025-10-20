@@ -65,6 +65,18 @@ fs3combat:
         - Leather Greaves
         - Chain Coif
         - Leather Boots
+    Zombie:
+      weapon: Unarmed
+      hitloc: Humanoid
+      defense_skill: Brawn
+      npc_type: Goon
+      armor: None
+    Skeleton:
+      weapon: Shortsword
+      hitloc: Humanoid
+      defense_skill: Brawn
+      npc_type: Goon
+      armor: None
     Target:
       hitloc: Target
       weapon: Unarmed
