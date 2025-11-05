@@ -52,7 +52,7 @@ demographics:
       wiki: Professions
     Species:
       desc: Character's species.
-      wiki: 'species'
+      wiki: known_species
       values:
         Dwarf: Rockhome Dwarves.
         Elf: Elves and any sub species.

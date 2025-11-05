@@ -65,6 +65,9 @@ website:
     menu:
     - title: Characters
       route: characters
+    - title: NPC's
+      route: wiki-page
+      id: npcs
     - title: Renown Rankings
       route: renown-top
     - title: Scenes
