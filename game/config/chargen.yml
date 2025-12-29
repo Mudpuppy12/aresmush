@@ -110,3 +110,5 @@ chargen:
 
     RP Hooks:
     %{rp_hooks}
+  intro_blurb: The online character creation tool will guide you through creating
+    your character.
