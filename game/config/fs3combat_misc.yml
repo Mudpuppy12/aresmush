@@ -39,7 +39,7 @@ fs3combat:
       npc_type: Goon
       armor: Leather Jerkin
       armor_specials:
-        - Leather Cap
+      - Leather Cap
     Bandit Archer:
       weapon: Short Bow
       hitloc: Humanoid
@@ -47,7 +47,7 @@ fs3combat:
       npc_type: Henchman
       armor: Leather Jerkin
       armor_specials:
-        - Leather Cap
+      - Leather Cap
     Bandit Captain:
       weapon: Longsword
       hitloc: Humanoid
@@ -61,10 +61,10 @@ fs3combat:
       npc_type: Boss
       armor: Plate Breastplate
       armor_specials:
-        - Leather Gauntlets
-        - Leather Greaves
-        - Chain Coif
-        - Leather Boots
+      - Leather Gauntlets
+      - Leather Greaves
+      - Chain Coif
+      - Leather Boots
     Zombie:
       weapon: Unarmed
       hitloc: Humanoid
@@ -150,3 +150,4 @@ fs3combat:
       message: Treated someone in combat.
   permissions:
     manage_combat: Control combats that you didn't organize.
+  gear_blurb: ''

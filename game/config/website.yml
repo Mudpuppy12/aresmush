@@ -281,3 +281,6 @@ website:
     - 4
     minute:
     - 37
+  public_wiki_folders:
+  - misc
+  default_public_folder: misc
